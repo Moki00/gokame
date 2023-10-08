@@ -1,0 +1,2 @@
+# gokame
+make that blog
