@@ -1,0 +1,22 @@
+Typography:
+Headers: Bold and modern font (Poppins or Montserrat)
+Body: Clean and readable (Open Sans or Roboto)
+
+Landing Page (Home):
+Ocean-inspired design with shades of green.
+ #008080, #2E8B57, #00FA9A.
+Ocean-inspired accents: light blue, sandy beige, and white.
+
+A clear CTA (“Start Your Journey”).
+Introduction to Gokame.
+Services overview (business planning, consulting, branding).
+Testimonials.
+
+Blog Page:
+Organized layout with categories for better navigation.
+Blog post previews with featured images, titles, and snippets.
+Easy social sharing buttons.
+
+Portfolio Page:
+Display of your successful projects or client stories.
+Each project can have a thumbnail, a brief description, and a link to more details.
