@@ -1,7 +1,11 @@
-# gokame
+# Gokame
 
-## make that blog to inspire
+## Landing page for new biz
 
-## starting Oct 8 2023 again
+## blog to inspire
 
-## Pushing for 10 years with Gokame
+## Profile for hire
+
+### est 2023
+
+### Pushing for 10 years with Gokame
