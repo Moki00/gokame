@@ -9,14 +9,37 @@ body {
   background-color: #1e1e1e;
 }
 
-.nav a {
-  color: #ffffff;
+/* links */
+/* Shared link styles */
+a {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
 }
+/* 
+.nav a {
+  color: #650404;
+} */
 
 .nav a.active {
   font-weight: bold;
 }
 
+/* Specific link states */
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blueviolet;
+}
+
+/* Light Mode Button */
 .theme-toggle-button {
   background: #eaff8a;
   color: #001f06;
