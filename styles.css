@@ -2,15 +2,35 @@
 body {
   background-color: #001010;
   color: #f6ff8f;
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh; /* full height */
+  margin: 0; /* Remove default margin */
 }
 
+/* Header Styles */
 .header,
 .footer {
-  background-color: #1e1e1e;
+  background-color: #004d40; /* Greenish ocean color */
+  color: white;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #004d40; /* Greenish ocean color */
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
 }
 
 /* links */
-/* Shared link styles */
 a {
   color: yellow;
   background-color: transparent;
@@ -25,7 +45,6 @@ a {
   font-weight: bold;
 }
 
-/* Specific link states */
 a:visited {
   color: green;
 }
@@ -39,7 +58,7 @@ a:active {
   color: blueviolet;
 }
 
-/* Light Mode Button */
+/* Light Mode */
 .theme-toggle-button {
   background: #eaff8a;
   color: #001f06;
@@ -48,7 +67,14 @@ a:active {
   cursor: pointer;
 }
 
-/* Light Mode */
+body.light-mode .theme-toggle-button {
+  background: #000000;
+  color: #00ff40;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: crosshair;
+}
+
 body.light-mode {
   background-color: #ffffff;
   color: #121212;
@@ -73,20 +99,7 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: Arial, sans-serif;
-}
-
-/* Header Styles */
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #004d40; /* Greenish ocean color */
-  color: white;
-  padding: 1rem;
 }
 
 /* Logo */
@@ -121,7 +134,7 @@ body {
   color: #80cbc4; /* Lighter ocean green */
 }
 
-/* Left Sidebar Nav for Desktop */
+/* Desktop */
 @media screen and (min-width: 768px) {
   .header {
     flex-direction: column;
@@ -144,10 +157,12 @@ body {
   /* Prevents main from being under the Nav Bar */
   main {
     margin-left: 200px;
+    /* flex: 1;
+    padding: 20px; */
   }
 }
 
-/* Responsive Top Bar for Mobile */
+/* Mobile */
 @media screen and (max-width: 768px) {
   .header {
     display: flex;
@@ -194,11 +209,4 @@ body {
   .hamburger {
     display: none;
   }
-}
-
-footer {
-  background-color: #004d40;
-  color: white;
-  text-align: center;
-  padding: 1rem;
 }
