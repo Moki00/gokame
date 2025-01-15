@@ -5,7 +5,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 97vh; /* full height */
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* Header Styles */
@@ -46,66 +57,16 @@ a {
 }
 
 a:visited {
-  color: green;
+  color: rgb(13, 255, 0);
 }
 
 a:hover {
-  color: red;
+  color: rgb(0, 208, 255);
   text-decoration: underline;
 }
 
 a:active {
   color: blueviolet;
-}
-
-/* Light Mode */
-.theme-toggle-button {
-  background: #eaff8a;
-  color: #001f06;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-body.light-mode .theme-toggle-button {
-  background: #000000;
-  color: #00ff40;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: crosshair;
-}
-
-body.light-mode {
-  background-color: #ffffff;
-  color: #121212;
-}
-
-body.light-mode .header,
-body.light-mode .footer {
-  background-color: #f0f0f0;
-}
-
-body.light-mode .nav a {
-  color: #121212;
-}
-
-body.light-mode .theme-toggle {
-  background: #121212;
-  color: #ffffff;
-}
-
-body,
-ul {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Logo */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 /* Navigation Bar */
@@ -132,6 +93,17 @@ ul {
 
 .nav ul li a:hover {
   color: #80cbc4; /* Lighter ocean green */
+}
+/* Nav Bar End */
+
+/* Portfolio */
+.portfolio-item {
+  border: #00ff40 1px solid;
+  margin-right: 1rem;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
 /* Desktop */
@@ -210,3 +182,40 @@ ul {
     display: none;
   }
 }
+
+/* Light Mode */
+.theme-toggle-button {
+  background: #eaff8a;
+  color: #001f06;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+body.light-mode .theme-toggle-button {
+  background: #000000;
+  color: #00ff40;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: crosshair;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-mode .header,
+body.light-mode .footer {
+  background-color: #f0f0f0;
+}
+
+body.light-mode .nav a {
+  color: #121212;
+}
+
+body.light-mode .theme-toggle {
+  background: #121212;
+  color: #ffffff;
+}
+/* Light Mode End */
